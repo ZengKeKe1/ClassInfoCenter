@@ -6,20 +6,8 @@ Dialog::Dialog(QWidget *parent) :
     ui(new Ui::Dialog)
 {
     ui->setupUi(this);
-    ui->Name->setText(Scores(select_Name)+"同学");
-    qDebug()<<globel::Usr_name;
-
-setWindowFlags(windowFlags()&~Qt::WindowContextHelpButtonHint);//隐藏问号
-    QDateTime time = QDateTime::currentDateTime();
-    QString str = time.toString("yyyy-MM-dd hh:mm ddd");
-   // QDateTime now = QDateTime::currentDateTime();
-    ui->Time->setText("Hi,现在是"+str+"这是您大学生活的第");
-   //connect(ui->ObjectC,SIGNAL(currentTextChanged(QString)),this,SLOT(ShowMScores(QString a)));
-   // if(ui->Search->clicked())
-   //    QString a;
-   //ui->ObjectC->currentTextChanged(QString);
-   // ShowMScores(ui->ObjectC->currentTextChanged(QString).toString());
-
+    setWindowFlags(windowFlags()&~Qt::WindowContextHelpButtonHint);//隐藏问号
+    Show();
 }
 
 Dialog::~Dialog()
@@ -89,4 +77,43 @@ void Dialog::on_MathPB_clicked()
 void Dialog::on_EnglishPB_clicked()
 {
     ShowScores(2);
+}
+
+void Dialog::ShowTime()
+{
+    QDate time = QDate::currentDate();
+    QString Days = time.toString("yyyy-MM-dd");
+    QDate time1,time2,time3,time4;
+    time1.setDate(2017,02,17);
+    time2.setDate(2017,07,02);
+    time3.setDate(2016,9,02);
+    time4.setDate(2020,07,01);
+    qint64 days1 = time1.daysTo(time);
+    qint64 days2 = time.daysTo(time2);
+    qint64 days3 = time3.daysTo(time);
+    qint64 days4 = time.daysTo(time4);
+    QString Days1 = QString::number(days1);
+    QString Days2 = QString::number(days2);
+    QString Days3 = QString::number(days3);
+    QString Days4 = QString::number(days4);
+   // QDateTime now = QDateTime::currentDateTime();
+    ui->Time->setWordWrap(true);
+    ui->Time->setText("Hi,今天是"+Days+",这是本学期的第"+Days1+"天，距离本学期结束还有"+Days2+"这是您大学生活的第"+Days3+"天,离毕业还有"+Days4+"天，祝您心情愉快");
+   //connect(ui->ObjectC,SIGNAL(currentTextChanged(QString)),this,SLOT(ShowMScores(QString a)));
+   // if(ui->Search->clicked())
+   //    QString a;
+   //ui->ObjectC->currentTextChanged(QString);
+   // ShowMScores(ui->ObjectC->currentTextChanged(QString).toString());
+
+}
+void Dialog::ShowName()
+{
+    ui->Name->setText(Scores(select_Name)+"同学");
+    qDebug()<<globel::Usr_name;
+
+}
+void Dialog::Show()
+{
+    ShowTime();
+    ShowName();
 }

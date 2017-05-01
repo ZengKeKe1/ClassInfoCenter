@@ -84,7 +84,7 @@
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">image: url(:/Sources/Photo1.gif);</string>
+    <string notr="true">image: url(:/Sources/photo1.gif);</string>
    </property>
    <property name="text">
     <string/>

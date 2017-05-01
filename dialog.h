@@ -3,6 +3,7 @@
 
 #include <QDialog>
 #include <login.h>
+#include <QDate>
 
 namespace Ui {
 class Dialog;
@@ -26,6 +27,9 @@ private:
     QSqlDatabase database;
     QString srv;
     void ShowScores(int a);
+    void ShowTime();
+    void ShowName();
+    void Show();
    // void ShowEScores();
 
     QString Scores(QString order);

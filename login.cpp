@@ -67,7 +67,8 @@ void LogIn::login_clicked()
 
 void LogIn::getUserInfo(QString number)
 {
-        database = (QSqlDatabase::addDatabase("QMYSQL"));
+        //database = (QSqlDatabase::addDatabase("QMYSQL"));
+           QSqlDatabase database=QSqlDatabase::addDatabase("QMYSQL");
            database.setHostName(this->srv);
            database.setDatabaseName("Scores");
            database.setUserName("usr1");
