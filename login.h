@@ -7,6 +7,7 @@
 #include <QSettings>
 #include <QDesktopWidget>
 #include <globle.h>
+#include "fanyi.h"
 
 namespace Ui {
 class LogIn;
@@ -31,8 +32,11 @@ private slots:
     void savecfg();
     void loadcfg();
 
+    void on_pushButton_clicked();
+
 private:
     Ui::LogIn *ui;
+    Fanyi *loginfanyi;
     QSqlDatabase database;
     QString usr_passwd;
     bool tableFlag;

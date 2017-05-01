@@ -1,5 +1,6 @@
 #include "dialog.h"
 #include "ui_dialog.h"
+#include "fanyi.h"
 
 Dialog::Dialog(QWidget *parent) :
     QDialog(parent),
@@ -116,4 +117,10 @@ void Dialog::Show()
 {
     ShowTime();
     ShowName();
+}
+
+void Dialog::on_pushButton_clicked()
+{
+    dialogfanyi=new Fanyi();
+    dialogfanyi->show();
 }

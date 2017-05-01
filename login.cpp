@@ -216,3 +216,9 @@ void LogIn::PasswordWrong()
     Dialog->show();
     Dialog->move ((QApplication::desktop()->width() - Dialog->width())/2,(QApplication::desktop()->height() - Dialog->height())/2);
 }
+
+void LogIn::on_pushButton_clicked()
+{
+    loginfanyi=new Fanyi();
+    loginfanyi->show();
+}

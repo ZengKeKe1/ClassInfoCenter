@@ -4,6 +4,7 @@
 #include <QDialog>
 #include <login.h>
 #include <QDate>
+#include "fanyi.h"
 
 namespace Ui {
 class Dialog;
@@ -22,6 +23,8 @@ private slots:
 
         void on_EnglishPB_clicked();
 
+        void on_pushButton_clicked();
+
 private:
     Ui::Dialog *ui;
     QSqlDatabase database;
@@ -30,6 +33,7 @@ private:
     void ShowTime();
     void ShowName();
     void Show();
+    Fanyi *dialogfanyi;
    // void ShowEScores();
 
     QString Scores(QString order);

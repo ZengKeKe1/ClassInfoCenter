@@ -6,6 +6,7 @@
 
 QT       += core gui \
             sql
+QT       += network
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -16,16 +17,19 @@ TEMPLATE = app
 SOURCES += main.cpp\
     login.cpp \
     dialog.cpp \
-    globle.cpp
+    globle.cpp \
+    fanyi.cpp
 
 HEADERS  += \
     login.h \
     dialog.h \
-    globle.h
+    globle.h \
+    fanyi.h
 
 FORMS    += \
     login.ui \
-    dialog.ui
+    dialog.ui \
+    fanyi.ui
 
 DISTFILES += \
     ../../../../../home/zengke/图片/2017-04-28 21-52-33屏幕截图.png
