@@ -4,7 +4,7 @@
 #include <QDialog>
 #include <login.h>
 #include <QDate>
-#include "fanyi.h"
+#include "translate.h"
 
 namespace Ui {
 class Dialog;

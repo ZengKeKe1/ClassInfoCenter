@@ -24,7 +24,7 @@ HEADERS  += \
     login.h \
     dialog.h \
     globle.h \
-    fanyi.h
+    translate.h
 
 FORMS    += \
     login.ui \

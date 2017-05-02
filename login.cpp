@@ -14,7 +14,8 @@ LogIn::LogIn(QWidget *parent) :
 
     connect(ui->loginBtn,SIGNAL(clicked(bool)),this,SLOT(login_clicked()));
     connect(ui->NumberLE,SIGNAL(textEdited(QString)),this,SLOT(getUserInfo(QString)));
-    connect(ui->Service, SIGNAL(textChanged(QString)), this, SLOT(GetServer(QString)));
+    //connect(ui->Service, SIGNAL(textChanged(QString)), this, SLOT(GetServer(QString)));
+
 
     tableFlag=false;
 
@@ -33,7 +34,7 @@ LogIn::~LogIn()
 void LogIn::login_clicked()
 {
 
-    GetServer(ui->Service->text());
+    //GetServer(ui->Service->text());
     getUserInfo(ui->NumberLE->text());
     if(matchFlag==false)
     {
@@ -69,20 +70,20 @@ void LogIn::getUserInfo(QString number)
 {
         //database = (QSqlDatabase::addDatabase("QMYSQL"));
            QSqlDatabase database=QSqlDatabase::addDatabase("QMYSQL");
-           database.setHostName(this->srv);
+           database.setHostName("119.29.206.109");
            database.setDatabaseName("Scores");
-           database.setUserName("usr1");
+           database.setUserName("guanli1");
            database.setPassword("zengkeke1");
 
-           if (database.open())
+           if (!database.open())
+           {
+               qDebug() << "Failed to connect to root mysql admin";
+                  disconnect();
+           }
 
-                        qDebug() << "succeed!";
            else
            {
-
-                        qDebug() << "Failed to connect to root mysql admin";
-                        disconnect();
-
+                  qDebug() << "succeed!";
            }
 
     QSqlQuery sql_query;        //改变量必须在成功打开数据库后定义才有效
@@ -122,13 +123,13 @@ void LogIn::getUserInfo(QString number)
 
 }
 
-void LogIn::GetServer(QString srv)
+/*void LogIn::GetServer(QString srv)
 {
     qDebug() << srv;
     this->srv = srv;
     globel::Srv = srv;
 }
-
+*/
 void LogIn::RemeberPd_clicked()
 {
     if(ui->RememberPd->isChecked())
@@ -174,7 +175,7 @@ void LogIn::disconnect()
 {
     QLabel *Dialog = new QLabel;
     Dialog->setWindowTitle("微冷");
-    Dialog->setText("连接服务器失败,请修改服务器地址");
+    Dialog->setText("连接服务器失败,请与曾轲联系");
     Dialog->setMaximumHeight(50);
     Dialog->setMaximumWidth(230);
     Dialog->setMinimumHeight(50);
@@ -222,3 +223,4 @@ void LogIn::on_pushButton_clicked()
     loginfanyi=new Fanyi();
     loginfanyi->show();
 }
+

@@ -29,40 +29,30 @@
    <property name="geometry">
     <rect>
      <x>80</x>
-     <y>170</y>
+     <y>220</y>
      <width>251</width>
-     <height>181</height>
+     <height>131</height>
     </rect>
    </property>
    <layout class="QFormLayout" name="formLayout">
     <item row="0" column="0">
-     <widget class="QLabel" name="LBservice">
-      <property name="text">
-       <string>服务器：</string>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="1">
-     <widget class="QLineEdit" name="Service"/>
-    </item>
-    <item row="1" column="0">
      <widget class="QLabel" name="LBnumber">
       <property name="text">
        <string>学号：</string>
       </property>
      </widget>
     </item>
-    <item row="1" column="1">
+    <item row="0" column="1">
      <widget class="QLineEdit" name="NumberLE"/>
     </item>
-    <item row="2" column="0">
+    <item row="1" column="0">
      <widget class="QLabel" name="LBpassword">
       <property name="text">
        <string>密码：</string>
       </property>
      </widget>
     </item>
-    <item row="2" column="1">
+    <item row="1" column="1">
      <widget class="QLineEdit" name="PasswordLE">
       <property name="text">
        <string/>
@@ -84,7 +74,7 @@
     </rect>
    </property>
    <property name="autoFillBackground">
-    <bool>true</bool>
+    <bool>false</bool>
    </property>
    <property name="styleSheet">
     <string notr="true">image: url(:/Sources/photo1.gif);</string>

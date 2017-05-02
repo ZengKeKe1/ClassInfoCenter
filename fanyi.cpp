@@ -1,4 +1,4 @@
-#include "fanyi.h"
+#include "translate.h"
 #include "ui_fanyi.h"
 
 QNetworkAccessManager *manger;
@@ -78,6 +78,6 @@ void Fanyi::slotfanyijieguo()
 
 void Fanyi::slotbutton()
 {
-    if(ui->lineEdit->text()>=1)
+    if(ui->lineEdit->text().length()>=1)
         ui->pushButton->setEnabled(true);
 }

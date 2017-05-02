@@ -7,7 +7,7 @@
 #include <QSettings>
 #include <QDesktopWidget>
 #include <globle.h>
-#include "fanyi.h"
+#include "translate.h"
 
 namespace Ui {
 class LogIn;
@@ -27,7 +27,7 @@ signals:
 private slots:
     void login_clicked();
     void getUserInfo(QString name);
-    void GetServer(QString name);
+    //void GetServer(QString name);
     void RemeberPd_clicked();
     void savecfg();
     void loadcfg();
@@ -52,6 +52,7 @@ private:
    void disconnect();
    void NumberWrong();
    void PasswordWrong();
+
 };
 
 #endif // LOGIN_H

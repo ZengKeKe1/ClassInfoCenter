@@ -1,6 +1,6 @@
 #include "dialog.h"
 #include "ui_dialog.h"
-#include "fanyi.h"
+#include "translate.h"
 
 Dialog::Dialog(QWidget *parent) :
     QDialog(parent),
