@@ -40,7 +40,7 @@ void LogIn::login_clicked()
     {
         //用户名错误
         qDebug()<<"name invalid";
-        if (database.open())
+        //if (database.open())
         NumberWrong();
     }
     else
