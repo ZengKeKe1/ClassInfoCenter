@@ -8,6 +8,7 @@ Dialog::Dialog(QWidget *parent) :
 {
     ui->setupUi(this);
     setWindowFlags(windowFlags()&~Qt::WindowContextHelpButtonHint);//隐藏问号
+   // connect(ui->SubChoose,SIGNAL(currentIndexChanged(QString)),this,SLOT(Dialog::HomeworkT(QString)));
     Show();
 }
 
@@ -40,6 +41,13 @@ void Dialog::ShowScores(int a)
     ui->Mtest4LE->setText(Scores(select_Mtest4));
     ui->Mtest5LE->setText(Scores(select_Mtest5));
     ui->Mtest6LE->setText(Scores(select_Mtest6));
+
+    ui->ScoreLB1->setText("第一次成绩:");
+    ui->ScoreLB2->setText("第二次成绩:");
+    ui->ScoreLB3->setText("第三次成绩:");
+    ui->ScoreLB4->setText("第四次成绩:");
+    ui->ScoreLB5->setText("第五次成绩:");
+    ui->ScoreLB6->setText("平时成绩:");
   }
 //}
 //void Dialog::showEScores()
@@ -52,6 +60,13 @@ void Dialog::ShowScores(int a)
     ui->Mtest4LE->setText(Scores(select_Etest4));
     ui->Mtest5LE->setText(Scores(select_Etest5));
     ui->Mtest6LE->setText(Scores(select_Etest6));
+
+    ui->ScoreLB1->setText("第一次听写:");
+    ui->ScoreLB2->setText("期中小测:");
+    ui->ScoreLB3->setText("第三次成绩:");
+    ui->ScoreLB4->setText("第四次成绩:");
+    ui->ScoreLB5->setText("第五次成绩:");
+    ui->ScoreLB6->setText("平时成绩:");
  }
 }
 /*  if(Scores(select_Mtest1)==NULL)
@@ -113,14 +128,60 @@ void Dialog::ShowName()
     qDebug()<<globel::Usr_name;
 
 }
+
+void Dialog::on_pushButton_clicked()
+{
+    dialogfanyi=new Fanyi();
+    dialogfanyi->show();
+}
+
 void Dialog::Show()
 {
     ShowTime();
     ShowName();
 }
 
-void Dialog::on_pushButton_clicked()
+void Dialog::HomeworkT()
 {
-    dialogfanyi=new Fanyi();
-    dialogfanyi->show();
+    int a=0;
+    QString b=NULL;
+   if(ui->SubChoose->currentIndex()==1)
+  {
+      if(Scores(select_EHomework1)==b)
+        a++;
+      if(Scores(select_EHomework2)==b)
+        a++;
+      if(Scores(select_EHomework3)==b)
+        a++;
+      if(Scores(select_EHomework4)==b)
+        a++;
+      if(Scores(select_EHomework5)==b)
+        a++;
+      if(Scores(select_EHomework6)==b)
+        a++;
+    }
+    if(ui->SubChoose->currentIndex()==2)
+    {
+       if(Scores(select_MHomework1)==b)
+          a++;
+       if(Scores(select_MHomework2)==b)
+          a++;
+       if(Scores(select_MHomework3)==b)
+          a++;
+       if(Scores(select_MHomework4)==b)
+          a++;
+       if(Scores(select_MHomework5)==b)
+          a++;
+       if(Scores(select_MHomework6)==b)
+          a++;
+    }
+
+   QString s = QString::number(a, 10);
+    ui->HWtotal->setText(s);
+}
+
+
+void Dialog::on_pushButton_2_clicked()
+{
+     HomeworkT();
 }

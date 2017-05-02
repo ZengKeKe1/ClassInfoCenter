@@ -55,7 +55,7 @@
      </widget>
     </item>
     <item row="2" column="0">
-     <widget class="QLabel" name="label_2">
+     <widget class="QLabel" name="ScoreLB2">
       <property name="text">
        <string>第二次成绩：</string>
       </property>
@@ -78,7 +78,7 @@
      </widget>
     </item>
     <item row="3" column="0">
-     <widget class="QLabel" name="label_3">
+     <widget class="QLabel" name="ScoreLB3">
       <property name="text">
        <string>第三次成绩：</string>
       </property>
@@ -101,7 +101,7 @@
      </widget>
     </item>
     <item row="4" column="0">
-     <widget class="QLabel" name="label_4">
+     <widget class="QLabel" name="ScoreLB4">
       <property name="text">
        <string>第四次成绩：</string>
       </property>
@@ -124,7 +124,7 @@
      </widget>
     </item>
     <item row="5" column="0">
-     <widget class="QLabel" name="label_5">
+     <widget class="QLabel" name="ScoreLB5">
       <property name="text">
        <string>第五次成绩：</string>
       </property>
@@ -147,7 +147,7 @@
      </widget>
     </item>
     <item row="6" column="0">
-     <widget class="QLabel" name="label_6">
+     <widget class="QLabel" name="ScoreLB6">
       <property name="text">
        <string>平时成绩：</string>
       </property>
@@ -170,7 +170,7 @@
      </widget>
     </item>
     <item row="1" column="0">
-     <widget class="QLabel" name="label">
+     <widget class="QLabel" name="ScoreLB1">
       <property name="text">
        <string>第一次成绩：</string>
       </property>
@@ -197,7 +197,7 @@
   <widget class="QLabel" name="label_8">
    <property name="geometry">
     <rect>
-     <x>360</x>
+     <x>330</x>
      <y>110</y>
      <width>151</width>
      <height>51</height>
@@ -236,7 +236,7 @@
      </widget>
     </item>
     <item row="0" column="1">
-     <widget class="QLineEdit" name="lineEdit_7"/>
+     <widget class="QLineEdit" name="HWtotal"/>
     </item>
     <item row="1" column="0" colspan="2">
      <widget class="QLineEdit" name="lineEdit_9"/>
@@ -255,10 +255,10 @@
     </item>
    </layout>
   </widget>
-  <widget class="QComboBox" name="comboBox_2">
+  <widget class="QComboBox" name="SubChoose">
    <property name="geometry">
     <rect>
-     <x>470</x>
+     <x>450</x>
      <y>120</y>
      <width>76</width>
      <height>31</height>
@@ -271,12 +271,12 @@
    </item>
    <item>
     <property name="text">
-     <string>高数</string>
+     <string>英语</string>
     </property>
    </item>
    <item>
     <property name="text">
-     <string>大英</string>
+     <string>高数</string>
     </property>
    </item>
    <item>
@@ -348,6 +348,19 @@
    </property>
    <property name="text">
     <string>去广告翻译</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>540</x>
+     <y>120</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>查询</string>
    </property>
   </widget>
  </widget>

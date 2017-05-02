@@ -25,6 +25,8 @@ private slots:
 
         void on_pushButton_clicked();
 
+        void on_pushButton_2_clicked();
+
 private:
     Ui::Dialog *ui;
     QSqlDatabase database;
@@ -33,8 +35,9 @@ private:
     void ShowTime();
     void ShowName();
     void Show();
+    void HomeworkT();
     Fanyi *dialogfanyi;
-   // void ShowEScores();
+    void ShowEScores();
 
     QString Scores(QString order);
     QString select_Name="select name from admin where number=";
@@ -51,6 +54,20 @@ private:
     QString select_Etest4 = "select test4 from EScores where number=";
     QString select_Etest5 = "select test5 from EScores where number=";
     QString select_Etest6 = "select testC from EScores where number=";
+
+   QString select_EHomework1 = "select HW1 from EHomework where number=";
+   QString select_EHomework2 = "select HW2 from EHomework where number=";
+   QString select_EHomework3 = "select HW3 from EHomework where number=";
+   QString select_EHomework4 = "select HW4 from EHomework where number=";
+   QString select_EHomework5 = "select HW5 from EHomework where number=";
+   QString select_EHomework6 = "select HW6 from EHomework where number=";
+
+   QString select_MHomework1 = "select HW1 from MHomework where number=";
+   QString select_MHomework2 = "select HW2 from MHomework where number=";
+   QString select_MHomework3 = "select HW3 from MHomework where number=";
+   QString select_MHomework4 = "select HW4 from MHomework where number=";
+   QString select_MHomework5 = "select HW5 from MHomework where number=";
+   QString select_MHomework6 = "select HW6 from MHomework where number=";
 };
 
 #endif // DIALOG_H
