@@ -26,7 +26,7 @@ signals:
 
 private slots:
     void login_clicked();
-    void getUserInfo(QString name);
+    void getUserInfo(QString number);
     //void GetServer(QString name);
     void RemeberPd_clicked();
     void savecfg();

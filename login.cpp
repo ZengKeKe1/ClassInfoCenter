@@ -12,10 +12,10 @@ LogIn::LogIn(QWidget *parent) :
     ui->setupUi(this);
     loadcfg();
 
+    connect(ui->loginBtn,SIGNAL(clicked(bool)),this,SLOT(getUserInfo()));
     connect(ui->loginBtn,SIGNAL(clicked(bool)),this,SLOT(login_clicked()));
-    connect(ui->NumberLE,SIGNAL(textEdited(QString)),this,SLOT(getUserInfo(QString)));
-    //connect(ui->Service, SIGNAL(textChanged(QString)), this, SLOT(GetServer(QString)));
-
+    //connect(ui->NumberLE,SIGNAL(textEdited(QString)),this,SLOT(getUserInfo(QString)));
+    //connect(ui->Service, SIGNAL(textChanged(QString)), this, SLOT(GetServer(QString)));  
 
     tableFlag=false;
 
@@ -68,6 +68,7 @@ void LogIn::login_clicked()
 
 void LogIn::getUserInfo(QString number)
 {
+           number=ui->NumberLE->text();
         //database = (QSqlDatabase::addDatabase("QMYSQL"));
            QSqlDatabase database=QSqlDatabase::addDatabase("QMYSQL");
            database.setHostName("119.29.206.109");
