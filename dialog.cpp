@@ -144,21 +144,21 @@ void Dialog::Show()
 void Dialog::HomeworkT()
 {
     int a=0;
-    QString b=NULL;
+    QString b="0";
    if(ui->SubChoose->currentIndex()==1)
   {
-      if(Scores(select_EHomework1)==b)
-        a++;
-      if(Scores(select_EHomework2)==b)
-        a++;
-      if(Scores(select_EHomework3)==b)
-        a++;
-      if(Scores(select_EHomework4)==b)
-        a++;
-      if(Scores(select_EHomework5)==b)
-        a++;
-      if(Scores(select_EHomework6)==b)
-        a++;
+       if(Scores(select_EHomework1)==b)
+         a++;
+       if(Scores(select_EHomework2)==b)
+         a++;
+       if(Scores(select_EHomework3)==b)
+         a++;
+       if(Scores(select_EHomework4)==b)
+         a++;
+       if(Scores(select_EHomework5)==b)
+         a++;
+       if(Scores(select_EHomework6)==b)
+         a++;
     }
     if(ui->SubChoose->currentIndex()==2)
     {
@@ -175,13 +175,193 @@ void Dialog::HomeworkT()
        if(Scores(select_MHomework6)==b)
           a++;
     }
-
+    if(ui->SubChoose->currentIndex()==3)
+    {
+       if(Scores(select_DHomework1)==b)
+          a++;
+       if(Scores(select_DHomework2)==b)
+          a++;
+       if(Scores(select_DHomework3)==b)
+          a++;
+       if(Scores(select_DHomework4)==b)
+          a++;
+       if(Scores(select_DHomework5)==b)
+          a++;
+       if(Scores(select_DHomework6)==b)
+          a++;
+    }
+    if(ui->SubChoose->currentIndex()==4)
+    {
+       if(Scores(select_PHomework1)==b)
+          a++;
+       if(Scores(select_PHomework2)==b)
+          a++;
+       if(Scores(select_PHomework3)==b)
+          a++;
+       if(Scores(select_PHomework4)==b)
+          a++;
+       if(Scores(select_PHomework5)==b)
+          a++;
+       if(Scores(select_PHomework6)==b)
+          a++;
+    }
+    if(ui->SubChoose->currentIndex()==5)
+    {
+       if(Scores(select_LHomework1)==b)
+          a++;
+       if(Scores(select_LHomework2)==b)
+          a++;
+       if(Scores(select_LHomework3)==b)
+          a++;
+       if(Scores(select_LHomework4)==b)
+          a++;
+       if(Scores(select_LHomework5)==b)
+          a++;
+       if(Scores(select_LHomework6)==b)
+          a++;
+    }
    QString s = QString::number(a, 10);
     ui->HWtotal->setText(s);
+}
+
+void Dialog::showhomework()
+{    if(ui->SubChoose->currentIndex()==1)
+      {
+      if(Scores(select_EHomework1)=="0")
+      ui->HomeworkLB1->setText(Scores1(select_EHomework11));
+      else  ui->HomeworkLB1->setText("完成");
+      if(Scores(select_EHomework2)=="0")
+      ui->HomeworkLB2->setText(Scores1(select_EHomework22));
+      else  ui->HomeworkLB2->setText("完成");
+      if(Scores(select_EHomework3)=="0")
+      ui->HomeworkLB3->setText(Scores1(select_EHomework33));
+      else  ui->HomeworkLB3->setText("完成");
+      if(Scores(select_EHomework4)=="0")
+      ui->HomeworkLB4->setText(Scores1(select_EHomework44));
+      else  ui->HomeworkLB4->setText("完成");
+      if(Scores(select_EHomework5)=="0")
+      ui->HomeworkLB5->setText(Scores1(select_EHomework55));
+      else  ui->HomeworkLB5->setText("完成");
+      if(Scores(select_EHomework6)=="0")
+      ui->HomeworkLB6->setText(Scores1(select_EHomework66));
+      else  ui->HomeworkLB6->setText("完成");
+   //   if(Scores(select_EHomework7)=="0")
+   //   ui->HomeworkLB7->setText(Scores(select_EHomework77));
+      }
+
+    if(ui->SubChoose->currentIndex()==2)
+        {
+        if(Scores(select_MHomework1)=="0")
+        ui->HomeworkLB1->setText(Scores1(select_MHomework11));
+        else  ui->HomeworkLB1->setText("完成");
+        if(Scores(select_MHomework2)=="0")
+        ui->HomeworkLB2->setText(Scores1(select_MHomework22));
+        else  ui->HomeworkLB2->setText("完成");
+        if(Scores(select_MHomework3)=="0")
+        ui->HomeworkLB3->setText(Scores1(select_MHomework33));
+        else  ui->HomeworkLB3->setText("完成");
+        if(Scores(select_MHomework4)=="0")
+        ui->HomeworkLB4->setText(Scores1(select_MHomework44));
+        else  ui->HomeworkLB4->setText("完成");
+        if(Scores(select_MHomework5)=="0")
+        ui->HomeworkLB5->setText(Scores1(select_MHomework55));
+        else  ui->HomeworkLB5->setText("完成");
+        if(Scores(select_MHomework6)=="0")
+        ui->HomeworkLB6->setText(Scores1(select_MHomework66));
+        else  ui->HomeworkLB6->setText("完成");
+     //   if(Scores(select_MHomework7)=="0")
+     //   ui->HomeworkLB7->setText(Scores(select_MHomework77));
+        }
+
+    if(ui->SubChoose->currentIndex()==3)
+        {
+        if(Scores(select_DHomework1)=="0")
+        ui->HomeworkLB1->setText(Scores1(select_DHomework11));
+        else  ui->HomeworkLB1->setText("完成");
+        if(Scores(select_DHomework2)=="0")
+        ui->HomeworkLB2->setText(Scores1(select_DHomework22));
+        else  ui->HomeworkLB2->setText("完成");
+        if(Scores(select_DHomework3)=="0")
+        ui->HomeworkLB3->setText(Scores1(select_DHomework33));
+        else  ui->HomeworkLB3->setText("完成");
+        if(Scores(select_DHomework4)=="0")
+        ui->HomeworkLB4->setText(Scores1(select_DHomework44));
+        else  ui->HomeworkLB4->setText("完成");
+        if(Scores(select_DHomework5)=="0")
+        ui->HomeworkLB5->setText(Scores1(select_DHomework55));
+        else  ui->HomeworkLB5->setText("完成");
+        if(Scores(select_DHomework6)=="0")
+        ui->HomeworkLB6->setText(Scores1(select_DHomework66));
+        else  ui->HomeworkLB6->setText("完成");
+    //    if(Scores(select_DHomework7)=="0")
+    //    ui->HomeworkLB7->setText(Scores(select_DHomework77));
+        }
+
+    if(ui->SubChoose->currentIndex()==4)
+        {
+        if(Scores(select_PHomework1)=="0")
+        ui->HomeworkLB1->setText(Scores1(select_PHomework11));
+        else  ui->HomeworkLB1->setText("完成");
+        if(Scores(select_PHomework2)=="0")
+        ui->HomeworkLB2->setText(Scores1(select_PHomework22));
+        else  ui->HomeworkLB2->setText("完成");
+        if(Scores(select_PHomework3)=="0")
+        ui->HomeworkLB3->setText(Scores1(select_PHomework33));
+        else  ui->HomeworkLB3->setText("完成");
+        if(Scores(select_PHomework4)=="0")
+        ui->HomeworkLB4->setText(Scores1(select_PHomework44));
+        else  ui->HomeworkLB4->setText("完成");
+        if(Scores(select_PHomework5)=="0")
+        ui->HomeworkLB5->setText(Scores1(select_PHomework55));
+        else  ui->HomeworkLB5->setText("完成");
+        if(Scores(select_PHomework6)=="0")
+        ui->HomeworkLB6->setText(Scores1(select_PHomework66));
+        else  ui->HomeworkLB6->setText("完成");
+    //    if(Scores(select_PHomework7)=="0")
+    //    ui->HomeworkLB7->setText(Scores1(select_PHomework77));
+        }
+
+    if(ui->SubChoose->currentIndex()==5)
+        {
+        if(Scores(select_LHomework1)=="0")
+        ui->HomeworkLB1->setText(Scores1(select_LHomework11));
+        else  ui->HomeworkLB1->setText("完成");
+        if(Scores(select_LHomework2)=="0")
+        ui->HomeworkLB2->setText(Scores1(select_LHomework22));
+        else  ui->HomeworkLB2->setText("完成");
+        if(Scores(select_LHomework3)=="0")
+        ui->HomeworkLB3->setText(Scores1(select_LHomework33));
+        else  ui->HomeworkLB3->setText("完成");
+        if(Scores(select_LHomework4)=="0")
+        ui->HomeworkLB4->setText(Scores1(select_LHomework44));
+        else  ui->HomeworkLB4->setText("完成");
+        if(Scores(select_LHomework5)=="0")
+        ui->HomeworkLB5->setText(Scores1(select_LHomework55));
+        else  ui->HomeworkLB5->setText("完成");
+        if(Scores(select_LHomework6)=="0")
+        ui->HomeworkLB6->setText(Scores1(select_LHomework66));
+        else  ui->HomeworkLB6->setText("完成");
+    //    if(Scores(select_LHomework7)=="0")
+    //    ui->HomeworkLB7->setText(Scores1(select_LHomework77));
+        }
+}
+QString Dialog::Scores1(QString order)
+{
+    QString Mtest;
+    QSqlQuery sql_query;
+    QString tempstring= order;
+    qDebug()<<tempstring;
+    qDebug()<<globel::Usr_name;
+    sql_query.exec(tempstring);
+    if(sql_query.next())
+    Mtest=sql_query.value(0).toString();
+    qDebug()<<Mtest;
+    return Mtest;
 }
 
 
 void Dialog::on_pushButton_2_clicked()
 {
      HomeworkT();
+     showhomework();
 }

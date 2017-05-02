@@ -224,7 +224,7 @@
    </property>
    <layout class="QFormLayout" name="formLayout_2">
     <item row="0" column="0">
-     <widget class="QLabel" name="label_9">
+     <widget class="QLabel" name="homework">
       <property name="font">
        <font>
         <family>OpenSymbol</family>
@@ -236,22 +236,29 @@
      </widget>
     </item>
     <item row="0" column="1">
-     <widget class="QLineEdit" name="HWtotal"/>
+     <widget class="QLineEdit" name="HWtotal">
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
     </item>
     <item row="1" column="0" colspan="2">
-     <widget class="QLineEdit" name="lineEdit_9"/>
+     <widget class="QLineEdit" name="HomeworkLB1"/>
     </item>
     <item row="2" column="0" colspan="2">
-     <widget class="QLineEdit" name="lineEdit_8"/>
+     <widget class="QLineEdit" name="HomeworkLB2"/>
     </item>
     <item row="3" column="0" colspan="2">
-     <widget class="QLineEdit" name="lineEdit_11"/>
+     <widget class="QLineEdit" name="HomeworkLB3"/>
     </item>
     <item row="4" column="0" colspan="2">
-     <widget class="QLineEdit" name="lineEdit_12"/>
+     <widget class="QLineEdit" name="HomeworkLB4"/>
     </item>
     <item row="5" column="0" colspan="2">
-     <widget class="QLineEdit" name="lineEdit_10"/>
+     <widget class="QLineEdit" name="HomeworkLB5"/>
+    </item>
+    <item row="6" column="0" colspan="2">
+     <widget class="QLineEdit" name="HomeworkLB6"/>
     </item>
    </layout>
   </widget>
@@ -286,7 +293,12 @@
    </item>
    <item>
     <property name="text">
-     <string>d</string>
+     <string>物理</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>离散数学</string>
     </property>
    </item>
   </widget>
