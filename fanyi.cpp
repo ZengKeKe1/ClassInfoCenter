@@ -3,7 +3,7 @@
 
 QNetworkAccessManager *manger;
 
-Fanyi::Fanyi(QWidget *parent) :
+Fanyi::Fanyi(QWidget *parent):
     QDialog(parent),
     ui(new Ui::Fanyi)
 {

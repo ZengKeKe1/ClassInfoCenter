@@ -1,7 +1,7 @@
 #ifndef GLOBLE_H
 #define GLOBLE_H
-#include <login.h>
-
+//#include <login.h>
+#include <QApplication>
 class globel{
 
 

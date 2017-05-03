@@ -2,10 +2,11 @@
 #define DIALOG_H
 
 #include <QDialog>
-#include <login.h>
 #include <QDate>
 #include "translate.h"
 #include "gpa.h"
+#include <globle.h>
+#include <QDesktopWidget>
 
 namespace Ui {
 class Dialog;
@@ -39,7 +40,7 @@ private:
     void ShowName();
     void Show();
     void HomeworkT();
-    Fanyi *dialogfanyi;
+   // Fanyi *dialogfanyi;
     GPA *gpa;//详细成绩查询窗口
     void ShowEScores();
     void showhomework();
@@ -67,6 +68,8 @@ private:
    QString select_EHomework4 = "select HW4 from EHomework where number=";
    QString select_EHomework5 = "select HW5 from EHomework where number=";
    QString select_EHomework6 = "select HW6 from EHomework where number=";
+   QString select_EHomework7 = "select HW7 from EHomework where number=";
+   QString select_EHomework8 = "select HW8 from EHomework where number=";
 
    QString select_MHomework1 = "select HW1 from MHomework where number=";
    QString select_MHomework2 = "select HW2 from MHomework where number=";
@@ -74,6 +77,8 @@ private:
    QString select_MHomework4 = "select HW4 from MHomework where number=";
    QString select_MHomework5 = "select HW5 from MHomework where number=";
    QString select_MHomework6 = "select HW6 from MHomework where number=";
+   QString select_MHomework7 = "select HW7 from MHomework where number=";
+   QString select_MHomework8 = "select HW8 from MHomework where number=";
 
    QString select_DHomework1 = "select HW1 from DHomework where number=";
    QString select_DHomework2 = "select HW2 from DHomework where number=";
@@ -81,6 +86,8 @@ private:
    QString select_DHomework4 = "select HW4 from DHomework where number=";
    QString select_DHomework5 = "select HW5 from DHomework where number=";
    QString select_DHomework6 = "select HW6 from DHomework where number=";
+   QString select_DHomework7 = "select HW7 from DHomework where number=";
+   QString select_DHomework8 = "select HW8 from DHomework where number=";
 
 
    QString select_PHomework1 = "select HW1 from PHomework where number=";
@@ -89,6 +96,8 @@ private:
    QString select_PHomework4 = "select HW4 from PHomework where number=";
    QString select_PHomework5 = "select HW5 from PHomework where number=";
    QString select_PHomework6 = "select HW6 from PHomework where number=";
+   QString select_PHomework7 = "select HW7 from PHomework where number=";
+   QString select_PHomework8 = "select HW8 from PHomework where number=";
 
    QString select_LHomework1 = "select HW1 from LHomework where number=";
    QString select_LHomework2 = "select HW2 from LHomework where number=";
@@ -96,6 +105,8 @@ private:
    QString select_LHomework4 = "select HW4 from LHomework where number=";
    QString select_LHomework5 = "select HW5 from LHomework where number=";
    QString select_LHomework6 = "select HW6 from LHomework where number=";
+   QString select_LHomework7 = "select HW7 from LHomework where number=";
+   QString select_LHomework8 = "select HW8 from LHomework where number=";
 
    QString select_EHomework11 = "select English from Homework where id=1";
    QString select_EHomework22 = "select English from Homework where id=2";
@@ -103,6 +114,8 @@ private:
    QString select_EHomework44 = "select English from Homework where id=4";
    QString select_EHomework55 = "select English from Homework where id=5";
    QString select_EHomework66 = "select English from Homework where id=6";
+   QString select_EHomework77 = "select English from Homework where id=7";
+   QString select_EHomework88 = "select English from Homework where id=8";
 
    QString select_MHomework11 = "select Math from Homework where id=1";
    QString select_MHomework22 = "select Math from Homework where id=2";
@@ -110,6 +123,8 @@ private:
    QString select_MHomework44 = "select Math from Homework where id=4";
    QString select_MHomework55 = "select Math from Homework where id=5";
    QString select_MHomework66 = "select Math from Homework where id=6";
+   QString select_MHomework77 = "select Math from Homework where id=7";
+   QString select_MHomework88 = "select Math from Homework where id=8";
 
    QString select_DHomework11 = "select Electric and Electronic Technique from Homework where id=1";
    QString select_DHomework22 = "select Electric and Electronic Technique from Homework where id=2";
@@ -117,6 +132,8 @@ private:
    QString select_DHomework44 = "select Electric and Electronic Technique from Homework where id=4";
    QString select_DHomework55 = "select Electric and Electronic Technique from Homework where id=5";
    QString select_DHomework66 = "select Electric and Electronic Technique from Homework where id=6";
+   QString select_DHomework77 = "select Electric and Electronic Technique from Homework where id=7";
+   QString select_DHomework88 = "select Electric and Electronic Technique from Homework where id=8";
 
    QString select_PHomework11 = "select physical from Homework where id=1";
    QString select_PHomework22 = "select physical from Homework where id=2";
@@ -124,6 +141,8 @@ private:
    QString select_PHomework44 = "select physical from Homework where id=4";
    QString select_PHomework55 = "select physical from Homework where id=5";
    QString select_PHomework66 = "select physical from Homework where id=6";
+   QString select_PHomework77 = "select physical from Homework where id=7";
+   QString select_PHomework88 = "select physical from Homework where id=8";
 
    QString select_LHomework11 = "select Discrete Mathematics from Homework where id=1";
    QString select_LHomework22 = "select Discrete Mathematics from Homework where id=2";
@@ -131,6 +150,8 @@ private:
    QString select_LHomework44 = "select Discrete Mathematics from Homework where id=4";
    QString select_LHomework55 = "select Discrete Mathematics from Homework where id=5";
    QString select_LHomework66 = "select Discrete Mathematics from Homework where id=6";
+   QString select_LHomework77 = "select Discrete Mathematics from Homework where id=7";
+   QString select_LHomework88 = "select Discrete Mathematics from Homework where id=8";
 
 };
 

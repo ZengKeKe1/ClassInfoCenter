@@ -3,11 +3,9 @@
 
 #include <QWidget>
 #include <QtSql/QtSql>
-#include "dialog.h"
 #include <QSettings>
-#include <QDesktopWidget>
-#include <globle.h>
-#include "translate.h"
+#include <qsettings.h>
+#include <dialog.h>
 
 namespace Ui {
 class LogIn;
@@ -37,6 +35,7 @@ private slots:
 private:
     Ui::LogIn *ui;
     Fanyi *loginfanyi;
+    Dialog *cw;
     QSqlDatabase database;
     QString usr_passwd;
     bool tableFlag;

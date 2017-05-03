@@ -12,10 +12,13 @@ LogIn::LogIn(QWidget *parent) :
     ui->setupUi(this);
     loadcfg();
 
+    ui->PasswordLE->setEchoMode(QLineEdit::Password);
     connect(ui->loginBtn,SIGNAL(clicked(bool)),this,SLOT(getUserInfo()));
     connect(ui->loginBtn,SIGNAL(clicked(bool)),this,SLOT(login_clicked()));
     //connect(ui->NumberLE,SIGNAL(textEdited(QString)),this,SLOT(getUserInfo(QString)));
     //connect(ui->Service, SIGNAL(textChanged(QString)), this, SLOT(GetServer(QString)));  
+    connect(ui->PasswordLE,SIGNAL(returnPressed()),this,SLOT(login_clicked()));
+    connect(ui->NumberLE,SIGNAL(returnPressed()),this,SLOT(login_clicked()));
 
     tableFlag=false;
 
@@ -56,12 +59,14 @@ void LogIn::login_clicked()
                   //用户名和密码均正确
             if(remeberPassword==true)
             savecfg();
-            Dialog cw(this);
+            //Dialog cw(this);
+            cw = new Dialog();
             this->hide();
-            cw.show();
-            cw.exec();    
-            cw.move ((QApplication::desktop()->width() - cw.width())/2,(QApplication::desktop()->height() - cw.height())/2);
+            cw->show();
+            cw->exec();
             this->close();
+            //cw.move ((QApplication::desktop()->width() - cw.width())/2,(QApplication::desktop()->height() - cw.height())/2);
+            //this->close();
         }
     }
 }
@@ -221,7 +226,9 @@ void LogIn::PasswordWrong()
 
 void LogIn::on_pushButton_clicked()
 {
-    loginfanyi=new Fanyi();
-    loginfanyi->show();
+   /* loginfanyi=new*/Fanyi aw(this);
+    aw.show();
+    aw.exec();
+  //  aw.move ((QApplication::desktop()->width() - aw.width())/2,(QApplication::desktop()->height() - aw.height())/2);
 }
 
