@@ -114,7 +114,7 @@ void Dialog::ShowTime()
     QString Days4 = QString::number(days4);
    // QDateTime now = QDateTime::currentDateTime();
     ui->Time->setWordWrap(true);
-    ui->Time->setText("Hi,今天是"+Days+",这是本学期的第"+Days1+"天，距离本学期结束还有"+Days2+"这是您大学生活的第"+Days3+"天,离毕业还有"+Days4+"天，祝您心情愉快");
+    ui->Time->setText("Hi,今天是"+Days+",这是本学期的第"+Days1+"天，距离本学期结束还有"+Days2+"天，这是您大学生活的第"+Days3+"天,离毕业还有"+Days4+"天，祝您心情愉快");
    //connect(ui->ObjectC,SIGNAL(currentTextChanged(QString)),this,SLOT(ShowMScores(QString a)));
    // if(ui->Search->clicked())
    //    QString a;
@@ -364,4 +364,11 @@ void Dialog::on_pushButton_2_clicked()
 {
      HomeworkT();
      showhomework();
+}
+
+void Dialog::on_pushButton_3_clicked()
+{
+    gpa=new GPA(this);
+    //详细成绩查询窗口创立
+    gpa->show();//详细成绩查询窗口打开
 }

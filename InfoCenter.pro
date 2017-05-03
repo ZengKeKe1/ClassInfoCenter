@@ -18,18 +18,23 @@ SOURCES += main.cpp\
     login.cpp \
     dialog.cpp \
     globle.cpp \
-    fanyi.cpp
+    fanyi.cpp \
+    gpa.cpp
+
 
 HEADERS  += \
     login.h \
     dialog.h \
     globle.h \
-    translate.h
+    translate.h \
+    gpa.h
 
 FORMS    += \
     login.ui \
     dialog.ui \
-    fanyi.ui
+    fanyi.ui \
+    gpa.ui
+
 
 DISTFILES += \
     ../../../../../home/zengke/图片/2017-04-28 21-52-33屏幕截图.png

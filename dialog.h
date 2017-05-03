@@ -5,6 +5,7 @@
 #include <login.h>
 #include <QDate>
 #include "translate.h"
+#include "gpa.h"
 
 namespace Ui {
 class Dialog;
@@ -27,6 +28,8 @@ private slots:
 
         void on_pushButton_2_clicked();
 
+        void on_pushButton_3_clicked();
+
 private:
     Ui::Dialog *ui;
     QSqlDatabase database;
@@ -37,6 +40,7 @@ private:
     void Show();
     void HomeworkT();
     Fanyi *dialogfanyi;
+    GPA *gpa;//详细成绩查询窗口
     void ShowEScores();
     void showhomework();
 

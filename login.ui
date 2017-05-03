@@ -25,6 +25,9 @@
   <property name="windowTitle">
    <string>料峭春风吹酒醒</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
   <widget class="QWidget" name="formLayoutWidget">
    <property name="geometry">
     <rect>
@@ -68,7 +71,7 @@
    <property name="geometry">
     <rect>
      <x>30</x>
-     <y>40</y>
+     <y>60</y>
      <width>361</width>
      <height>91</height>
     </rect>
