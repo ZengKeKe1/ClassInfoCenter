@@ -7,7 +7,7 @@ GPA::GPA(QWidget *parent) :
     ui(new Ui::GPA)
 {
     ui->setupUi(this);
-    setWindowTitle(tr("详细成绩"));
+    setWindowTitle(tr("前程命运游中寻，万代江山戏里绣"));
     setWindowFlags(windowFlags()&~Qt::WindowContextHelpButtonHint);//隐藏问号
 
 }

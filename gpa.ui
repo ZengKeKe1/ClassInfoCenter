@@ -7,8 +7,20 @@
     <x>0</x>
     <y>0</y>
     <width>430</width>
-    <height>422</height>
+    <height>430</height>
    </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>430</width>
+    <height>430</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>430</width>
+    <height>430</height>
+   </size>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
@@ -109,7 +121,7 @@
      <x>20</x>
      <y>70</y>
      <width>391</width>
-     <height>331</height>
+     <height>347</height>
     </rect>
    </property>
    <layout class="QGridLayout" name="gridLayout">

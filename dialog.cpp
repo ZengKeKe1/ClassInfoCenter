@@ -7,6 +7,7 @@ Dialog::Dialog(QWidget *parent) :
     ui(new Ui::Dialog)
 {
     ui->setupUi(this);
+    setWindowIcon(QIcon(QStringLiteral(":/Sources/class.ico")));
     setWindowFlags(windowFlags()&~Qt::WindowContextHelpButtonHint);//隐藏问号
    // connect(ui->SubChoose,SIGNAL(currentIndexChanged(QString)),this,SLOT(Dialog::HomeworkT(QString)));
     Show();

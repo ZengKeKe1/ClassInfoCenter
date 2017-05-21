@@ -6,24 +6,27 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>418</width>
-    <height>422</height>
+    <width>640</width>
+    <height>480</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
-    <width>418</width>
-    <height>422</height>
+    <width>640</width>
+    <height>480</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
-    <width>418</width>
-    <height>422</height>
+    <width>640</width>
+    <height>480</height>
    </size>
   </property>
   <property name="windowTitle">
    <string>料峭春风吹酒醒</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
   </property>
   <property name="styleSheet">
    <string notr="true"/>
@@ -31,17 +34,24 @@
   <widget class="QWidget" name="formLayoutWidget">
    <property name="geometry">
     <rect>
-     <x>80</x>
-     <y>220</y>
-     <width>251</width>
-     <height>131</height>
+     <x>350</x>
+     <y>190</y>
+     <width>252</width>
+     <height>91</height>
     </rect>
    </property>
-   <layout class="QFormLayout" name="formLayout">
+   <layout class="QGridLayout" name="gridLayout">
     <item row="0" column="0">
      <widget class="QLabel" name="LBnumber">
+      <property name="font">
+       <font>
+        <family>Script MT Bold</family>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
       <property name="text">
-       <string>学号：</string>
+       <string>Number:</string>
       </property>
      </widget>
     </item>
@@ -50,8 +60,15 @@
     </item>
     <item row="1" column="0">
      <widget class="QLabel" name="LBpassword">
+      <property name="font">
+       <font>
+        <family>Script MT Bold</family>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
       <property name="text">
-       <string>密码：</string>
+       <string>Password:</string>
       </property>
      </widget>
     </item>
@@ -70,10 +87,10 @@
   <widget class="QLabel" name="LBclass">
    <property name="geometry">
     <rect>
-     <x>30</x>
+     <x>310</x>
      <y>60</y>
-     <width>361</width>
-     <height>91</height>
+     <width>331</width>
+     <height>71</height>
     </rect>
    </property>
    <property name="autoFillBackground">
@@ -89,24 +106,33 @@
   <widget class="QPushButton" name="loginBtn">
    <property name="geometry">
     <rect>
-     <x>200</x>
-     <y>320</y>
+     <x>490</x>
+     <y>310</y>
      <width>101</width>
      <height>31</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12pt &quot;华文行楷&quot;;</string>
+   </property>
    <property name="text">
     <string>登录</string>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
    </property>
   </widget>
   <widget class="QCheckBox" name="RememberPd">
    <property name="geometry">
     <rect>
-     <x>100</x>
-     <y>320</y>
+     <x>380</x>
+     <y>300</y>
      <width>89</width>
      <height>28</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 9pt &quot;华文行楷&quot;;</string>
    </property>
    <property name="text">
     <string>记住账号</string>
@@ -115,27 +141,53 @@
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>300</x>
-     <y>380</y>
+     <x>510</x>
+     <y>443</y>
      <width>101</width>
      <height>28</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 9pt &quot;微软雅黑&quot;;</string>
+   </property>
    <property name="text">
     <string>去广告翻译</string>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
    </property>
   </widget>
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>250</x>
-     <y>386</y>
+     <x>470</x>
+     <y>450</y>
      <width>41</width>
      <height>21</height>
     </rect>
    </property>
    <property name="text">
     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;特色：&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>21</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+border-image: url(:/Sources/tmpdir__17_5_12_22_39_22.gif);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
    </property>
   </widget>
  </widget>

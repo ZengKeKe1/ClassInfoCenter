@@ -126,14 +126,14 @@ private:
    QString select_MHomework77 = "select Math from Homework where id=7";
    QString select_MHomework88 = "select Math from Homework where id=8";
 
-   QString select_DHomework11 = "select Electric and Electronic Technique from Homework where id=1";
-   QString select_DHomework22 = "select Electric and Electronic Technique from Homework where id=2";
-   QString select_DHomework33 = "select Electric and Electronic Technique from Homework where id=3";
-   QString select_DHomework44 = "select Electric and Electronic Technique from Homework where id=4";
-   QString select_DHomework55 = "select Electric and Electronic Technique from Homework where id=5";
-   QString select_DHomework66 = "select Electric and Electronic Technique from Homework where id=6";
-   QString select_DHomework77 = "select Electric and Electronic Technique from Homework where id=7";
-   QString select_DHomework88 = "select Electric and Electronic Technique from Homework where id=8";
+   QString select_DHomework11 = "select ElectricandElectronicTechnique from Homework where id=1";
+   QString select_DHomework22 = "select ElectricandElectronicTechnique from Homework where id=2";
+   QString select_DHomework33 = "select ElectricandElectronicTechnique from Homework where id=3";
+   QString select_DHomework44 = "select ElectricandElectronicTechnique from Homework where id=4";
+   QString select_DHomework55 = "select ElectricandElectronicTechnique from Homework where id=5";
+   QString select_DHomework66 = "select ElectricandElectronicTechnique from Homework where id=6";
+   QString select_DHomework77 = "select ElectricandElectronicTechnique from Homework where id=7";
+   QString select_DHomework88 = "select ElectricandElectronicTechnique from Homework where id=8";
 
    QString select_PHomework11 = "select physical from Homework where id=1";
    QString select_PHomework22 = "select physical from Homework where id=2";
@@ -144,14 +144,14 @@ private:
    QString select_PHomework77 = "select physical from Homework where id=7";
    QString select_PHomework88 = "select physical from Homework where id=8";
 
-   QString select_LHomework11 = "select Discrete Mathematics from Homework where id=1";
-   QString select_LHomework22 = "select Discrete Mathematics from Homework where id=2";
-   QString select_LHomework33 = "select Discrete Mathematics from Homework where id=3";
-   QString select_LHomework44 = "select Discrete Mathematics from Homework where id=4";
-   QString select_LHomework55 = "select Discrete Mathematics from Homework where id=5";
-   QString select_LHomework66 = "select Discrete Mathematics from Homework where id=6";
-   QString select_LHomework77 = "select Discrete Mathematics from Homework where id=7";
-   QString select_LHomework88 = "select Discrete Mathematics from Homework where id=8";
+   QString select_LHomework11 = "select DiscreteMathematics from Homework where id=1";
+   QString select_LHomework22 = "select DiscreteMathematics from Homework where id=2";
+   QString select_LHomework33 = "select DiscreteMathematics from Homework where id=3";
+   QString select_LHomework44 = "select DiscreteMathematics from Homework where id=4";
+   QString select_LHomework55 = "select DiscreteMathematics from Homework where id=5";
+   QString select_LHomework66 = "select DiscreteMathematics from Homework where id=6";
+   QString select_LHomework77 = "select DiscreteMathematics from Homework where id=7";
+   QString select_LHomework88 = "select DiscreteMathematics from Homework where id=8";
 
 };
 

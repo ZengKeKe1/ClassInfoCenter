@@ -42,3 +42,5 @@ DISTFILES += \
 RESOURCES += \
     photos.qrc
 CONFIG   += c++11
+
+RC_FILE = ClassInfoCenter.rc

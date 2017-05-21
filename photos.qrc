@@ -1,5 +1,10 @@
 <RCC>
     <qresource prefix="/">
         <file>Sources/photo1.gif</file>
+        <file>Sources/829658.png</file>
+        <file>Sources/tmpdir__17_5_12_22_39_22.gif</file>
+        <file>Sources/778242_1.png</file>
+        <file>Sources/class.ico</file>
+        <file>ClassInfoCenter.rc</file>
     </qresource>
 </RCC>
